@@ -1,0 +1,11 @@
+<%- include ('partials/header'); %>
+<header>
+	<h1>My API Project: Timestamp Microservice</h1>
+	<h3>User Stories</h3>
+</header>
+<main>
+	<ul>
+		<li>The API endpoint is <code>cuddly-satin.glitch.me/api/timestamp/:date_string?</code></li>
+		<li>
+	</ul>
+</main>

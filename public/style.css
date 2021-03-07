@@ -1,0 +1,42 @@
+/* Styles applied to my HOMEPAGE */
+
+body {
+  background-color: #222;
+  color: #ddd;
+  text-align: center;
+  font-family: sans-serif;
+}
+
+h1 {
+  font-size: 3em;
+}
+
+code {
+  color: #ddffb0;
+  background-color: #666;
+}
+
+ol {
+  margin: 0 auto;
+  max-width: 600px;
+}
+
+li {
+  text-align: left;
+  padding: 5px;
+}
+
+a {
+  color: yellow;
+}
+
+.not_found {
+  color: #777;
+  font-weight: bold;
+  z-index: 10;
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  font-size: 2em;
+  text-shadow: 1px 1px 2px black; 
+}

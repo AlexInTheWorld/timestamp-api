@@ -1,0 +1,27 @@
+<%- include ('partials/header'); %>
+<header>
+	<h1>My API Project: Timestamp Microservice</h1>
+	<h3>User Stories</h3>
+</header>
+<main>
+	<ol>
+		<li>The API endpoint is <code>cuddle-satin.glitch.me/api/timestamp/:date_string?</code></li>
+		<li>A date string is valid if it can be successfully parsed by <code>new Date(date_string)</code>.<br>The Unix timestamp needs to be an <strong>integer</strong> (not a string) specifying <strong>milliseconds</strong>.<br>Use date strings compliant with ISO-8601 (e.g. "<code>2017-12-30</code>") to ensure UTC timestamp.</li>
+
+		<li>If the date string is <strong>empty</strong> it should be equivalent to trigger <code>new Date()</code> i.e., the API uses the current timestamp.</li>
+		<li>If the date string is <strong>valid</strong> the API returns a JSON having the structure:<br><code>{"unix": date.getTime()>, "utc": <date.toUTCString()> }</code><br>e.g. <code>{"unix": 1479663089000, "utc": "Sun, 20 Nov 2016 17:31:29 GMT"}</code></li>
+		<li>If the date string is <strong>invalid</strong> the API return a JSON having the structure:<br><code>{"error": "Invalid date"}</code>
+	</ol>
+</main>
+<aside>
+	<section>
+	<h3>Example uses:</h3>
+	<p><a href="api/timestamp/2015-03-22">respected-cuddle-satin.glitch.me/api/timestamp/2015-03-22</a></p>
+	<p><a href="api/timestamp/1451001600000">respected-cuddle-satin.glitch.me/api/timpestamp/1451001600000</a></p>
+	</section>
+	<section>
+		<h3>Example output:</h3>
+			<p><code>{"unix": 1451001600000, "utc": "Fri, 25 Dec 2015 00:00:00 GMT"}</code></p>
+	</section>
+</aside>
+<%- include ('partials/footer'); %>
